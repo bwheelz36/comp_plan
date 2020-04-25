@@ -1,0 +1,5 @@
+Bladder max VX30 EUD NTCPlkb SED null
+PTV max VX42.75 EUD TCPpossionLQ  null
+GTV max VX49.5 EUD TCPpossionLQ  null
+Rectum max VX30 EUD NTCPlkb  null
+femoral max VX30 EUD NTCPlkb  null

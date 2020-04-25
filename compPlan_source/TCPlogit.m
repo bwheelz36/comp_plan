@@ -1,0 +1,15 @@
+function tcp = TCPlogit(d,nvdiff,d50,g50)
+% written Lois Holloway 
+%Permission is granted to use or modify only for non-commercial use. No warranty is expressed or implied for any
+% use whatever: use at your own risk.
+
+
+
+%function to generate tcp values based on the Logit model- see Goitein
+%1985, Kallman
+
+    value1=4*g50;
+    value2=(d50./d).^value1;
+    value3=(1./(1+value2)).^nvdiff;
+    tcp=prod(value3);
+end

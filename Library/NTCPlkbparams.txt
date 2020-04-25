@@ -1,0 +1,3 @@
+Bladder .11 .5 80 NoReference
+Rectum .12 .15 80 NoReference
+femoral .12 .25 65 NoReference
