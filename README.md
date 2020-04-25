@@ -33,6 +33,8 @@ should be one excel based DSV file for each structure of interest. If you are sk
 MatlabGUI! From this GUI, you should select the base directory created in step 1 (or you can use the example base directory)
 and select each contour you want to generate metrics for. click next.
 
+![PART1](_resources/Part1_screenGrab.PNG "GUI Part1")
+
 3. A second GUI will load. This is where you can add all the metrics you are interested in. There's a lot here! for explanation
 of what all these models are and how they work, please refer to our [publication](_resources/2012_Holloway_CompPlan.pdf).
    - In the first column on the structure you would like to add metrics for
@@ -45,6 +47,8 @@ of what all these models are and how they work, please refer to our [publication
     - **hint:** for the purpose of this tutorial, it may be easiest to select a few metrics which require no parameters, 
     e.g. min, max etc.
     - Click 'create text files'. The text files necesary to run comp plan will be added to the base directory.
+	
+![PART2](_resources/Part2_screenGrab.PNG "GUI Part2")
 
 Library directory
 -----------------
