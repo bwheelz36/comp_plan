@@ -92,7 +92,9 @@ There are a few user options you can turn on or off at the top of the page.
 
 **Mode**='singleDirectory'; %'singleDirectory' or 'batch'. Batch simply loops over all supplied directories. **Warning** - I'm
 not confident batch mode works properly!
+
 **plotDVHs**=1; % set values below to 1 to plot DVHs, 0 otherwise. Plotting slows code substantially.
+
 **plotparams**=0; % set values below to 1 to add the calculation parameters to the results file
 xlnum=1; %position of data in excel, if you wish to add data to a previous file this
 
