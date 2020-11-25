@@ -10,7 +10,7 @@ function ntcp=NTCPlkb(d,nvdiff, n,m,d50)
     value1=(d/max(d)).^(1/n);
     Veff=nvdiff'*((d/max(d)).^(1/n));
     d50veff=d50/(Veff^n);
-    t=(max(d)-d50veff)*d50veff/m ;
+    t=(max(d)-d50veff)/(d50veff*m);
     ntcp=NTCPint(t);
 end
 
