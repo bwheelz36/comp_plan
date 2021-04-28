@@ -3,7 +3,7 @@ COMP PLAN
 
 **Authors:** Lois Holloway, Brendan Whelan, many others!
 
-**Purpose:** Calculate a wide range of radiobiogical metric from DVH files.
+**Purpose:** Calculate a wide range of radiobiogical metric from DVH files for radiotherapy treatment planning.
 
 Introduction
 ------------
