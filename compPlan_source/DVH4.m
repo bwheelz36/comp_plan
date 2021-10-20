@@ -24,12 +24,12 @@ switch option
         for j=1:maxnum_plans
             col=char(colours(j));
             plot(DVH{j,i}.d,DVH{j,i}.vcum,col)
-            PLANS{j}=DVH{j,i}.plan;;
+            PLANS{j}=DVH{j,i}.plan;
         end        
         xlabel('dose');
         ylabel('volume');
-        title(DVH{j,i}.structure);;
-        legend(PLANS,'Location','Best');
+        title(DVH{j,i}.structure, 'Interpreter', 'none');
+        legend(PLANS,'Location','Best', 'Interpreter', 'none');
         hold off
         
         xlswritefig(figure(i),fullfile(basedirectory,'metricresults.xls'),DVH{j,i}.structurecomplete,'J12');
@@ -47,8 +47,8 @@ for i=1:number_structures
         end        
         xlabel('dose');
         ylabel('volume');
-        title([DVH{j,i}.structure ' ' 'vdiff']);
-        legend(PLANS,'Location','Best');
+        title([DVH{j,i}.structure ' ' 'vdiff'], 'Interpreter', 'none');
+        legend(PLANS,'Location','Best', 'Interpreter', 'none');
         hold off;
         
         xlswritefig(figure(1),fullfile(basedirectory,'metricresults.xls'),DVH{j,i}.structurecomplete,'A12');
@@ -63,8 +63,8 @@ for i=1:number_structures
         end        
         xlabel('dose');
         ylabel('volume');
-        title('DVH of PTV for distorted plans recalculated on original ED');
-        legend(PLANS,'Location','Best');
+        title('DVH of PTV for distorted plans recalculated on original ED', 'Interpreter', 'none');
+        legend(PLANS,'Location','Best','Interpreter', 'none');
         hold off;
         
         xlswritefig(figure(1),fullfile(basedirectory,'metricresults.xls'),DVH{j,i}.structurecomplete,'J12');
@@ -79,8 +79,8 @@ for i=1:number_structures
         end        
         xlabel('dose');
         ylabel('volume');
-        title([DVH{j,i}.structure ' ' 'nvcum']);
-        legend(PLANS,'Location','Best');
+        title([DVH{j,i}.structure ' ' 'nvcum'],'Interpreter', 'none');
+        legend(PLANS,'Location','Best', 'Interpreter', 'none');
         hold off;
         
         xlswritefig(figure(3),fullfile(basedirectory,'metricresults.xls'),DVH{j,i}.structurecomplete,'P12');
@@ -94,8 +94,8 @@ for i=1:number_structures
         end        
         xlabel('dose');
         ylabel('volume');
-        title([DVH{j,i}.structure ' ' 'nvdiff']);
-        legend(PLANS,'Location','Best');
+        title([DVH{j,i}.structure ' ' 'nvdiff'], 'Interpreter', 'none');
+        legend(PLANS,'Location','Best', 'Interpreter', 'none');
         hold off;
         
         xlswritefig(figure(4),fullfile(basedirectory,'metricresults.xls'),DVH{j,i}.structurecomplete,'V12');
@@ -112,8 +112,8 @@ for i=1:number_structures
         end        
         xlabel('dose');
         ylabel('SED');
-        title([DVH{j,i}.structure ' ' 'SED']);
-        legend(PLANS,'Location','Best');
+        title([DVH{j,i}.structure ' ' 'SED'], 'Interpreter', 'none');
+        legend(PLANS,'Location','Best', 'Interpreter', 'none');
         hold off;
         
         xlswritefig(figure(5),fullfile(basedirectory,'metricresults.xls'),DVH{j,i}.structurecomplete,'Z12');

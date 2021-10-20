@@ -1,4 +1,4 @@
-function []=Comp_Plan_main(BaseDirectoryLocation)
+function Comp_Plan_main(BaseDirectoryLocation)
 
 % Analyse a comp plan 'base directory'
 % BaseDirectoryLocation is the directory in which the excel DVH files for the given
