@@ -8,11 +8,15 @@ function mindose=mindosecumdvh(dvh)
 % dose and volume information
 [nb,N]=size(dvh);
 mindose=0;
+try
 for i=1:nb
      if(((dvh(i,2)-dvh(i+1,2))>0.00001))
         mindose=dvh(i,1);
         break
      end
+end
+catch
+    print('helo')
 end
 end
     

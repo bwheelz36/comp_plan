@@ -46,15 +46,14 @@ switch Mode
          %for excel output
 
         for l=1:number_structures
-
             %separate one cell string array per structure- for ease of
             %understanding
-        st_structure_metrics=cellstr(structure_metrics{l}{1});
-        DVHs=generate_DVHsboost (maxnum_metrics,BaseDirectoryLocation,plans{i},st_structure_metrics);
-        DVHcombined{i,l}=DVHs;
-           combmetric = calculate_structure_metrics8 (BaseDirectoryLocation,maxnum_metrics,st_structure_metrics,DVHs);
-           metric=combmetric.metric;
-        output_metrics_excel3(BaseDirectoryLocation,st_structure_metrics{1},i,maxnum_metrics,metric,xlnum,{plans{1,i}{1,1}{1,1}},st_structure_metrics);
+            st_structure_metrics=cellstr(structure_metrics{l}{1});
+            DVHs=generate_DVHsboost (maxnum_metrics,BaseDirectoryLocation,plans{i},st_structure_metrics);
+            DVHcombined{i,l}=DVHs;
+            combmetric = calculate_structure_metrics8 (BaseDirectoryLocation,maxnum_metrics,st_structure_metrics,DVHs);
+            metric=combmetric.metric;
+            output_metrics_excel3(BaseDirectoryLocation,st_structure_metrics{1},i,maxnum_metrics,metric,xlnum,{plans{1,i}{1,1}{1,1}},st_structure_metrics);
         if plotparams==1
         output_metrics_excel3( BaseDirectoryLocation,[st_structure_metrics{1} 'params'],i,maxnum_metrics,combmetric.metricparams,xlnum,{plans{1,i}{1,1}{1,1}},st_structure_metrics);
         end

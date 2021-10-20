@@ -14,8 +14,7 @@ For a detailed description of the rational, architecture, and capabilities of th
 In essence, Comp_Plan_main.m will analyse a *base directory*, which is a folder containing:
 
 1) a series of text files which tells comp_plan what to do
-2) the raw data: DVH files in excel format. Column A should contain the volume information, and column B should contain
- the Dose information. 
+2) the raw data: DVH files in excel format. Column A should contain the dose information, and column B should contain the volume information. 
 
 Although it is completely possible to use CompPlan without utilising any GUIs, it does require the user to manually
 create a large number of text files, which can be rather painstaking and error-prone. Therefore, the easiest way to set 
@@ -36,18 +35,19 @@ and select each contour you want to generate metrics for. click next.
 ![PART1](_resources/Part1_screenGrab.PNG "GUI Part1")
 
 3. A second GUI will load. This is where you can add all the metrics you are interested in. There's a lot here! for explanation
-of what all these models are and how they work, please refer to our [publication](_resources/2012_Holloway_CompPlan.pdf).
+	of what all these models are and how they work, please refer to our [publication](_resources/2012_Holloway_CompPlan.pdf).
    - In the first column on the structure you would like to add metrics for
    - In the second column, select the metrics you want to calculate using e.g. ctrl and/or shift, and click 'add selected metrics'
    - In the third column, select each metric one by one, and add all necesarry parameters. Again, see our
     [publication](_resources/2012_Holloway_CompPlan.pdf) for details. Note that the 'Reference' field can be left blank -
-    this is merely for your own sanity when you try and reproduce your results five years later!
+     this is merely for your own sanity when you try and reproduce your results five years later!
     - Click through each structure in the first column, and check what metrics you have added. Ensure all necessary 
     parameters are entered.  You can add or remove parameters if you want.
     - **hint:** for the purpose of this tutorial, it may be easiest to select a few metrics which require no parameters, 
     e.g. min, max etc.
     - Click 'create text files'. The text files necesary to run comp plan will be added to the base directory.
 	
+
 ![PART2](_resources/Part2_screenGrab.PNG "GUI Part2")
 
 Library directory

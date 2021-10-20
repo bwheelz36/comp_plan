@@ -131,7 +131,7 @@ PlanNames(ismember(PlanNames,{'.','..'})) = [];
  set(handles.text4,'String',PlanNames);
  
  %Populate ListBox of structures
- Structures=ls(fullfile(BaseDirectory,PlanNames{1},'*.xls'));
+ Structures=ls(fullfile(BaseDirectory,PlanNames{1},'*.xls*'));
  set(handles.listbox1,'String',Structures);
  %later will have to put in a routine for the situation where not all
  %structures are the same... 
